@@ -3,6 +3,7 @@ language:
   - ja
 license: mit
 library_name: pytorch
+pipeline_tag: text-generation
 tags:
   - gpt
   - transformer
@@ -14,6 +15,14 @@ tags:
 # 🤖 Mini-GPT (フルスクラッチ日本語ミニLLM)
 
 Python と PyTorch だけでゼロから実装した、学習・実験用の小規模な日本語 GPT（Decoder-only Transformer）モデル（約90万パラメータ）です。
+
+<p>
+  <a href="https://huggingface.co/spaces/koheip/mini-gpt-ja-demo"><img alt="Open in Spaces" src="https://huggingface.co/datasets/huggingface/badges/resolve/main/open-in-hf-spaces-sm.svg"></a>
+  <a href="https://github.com/koheip/mini-llm"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-koheip%2Fmini--llm-181717?logo=github"></a>
+</p>
+
+- 🎮 **デモ（ブラウザで会話）**: https://huggingface.co/spaces/koheip/mini-gpt-ja-demo
+- 💻 **GitHub**: https://github.com/koheip/mini-llm
 
 ## ✨ 特徴
 
@@ -73,3 +82,13 @@ python web_ui.py
 - `chat_data.txt` : 一問一答の日本語会話データセット
 - `chat_model.pt` : 学習済みのモデル重みファイル（PyTorch state_dict）
 - `web_ui.py` : ローカル Web UI サーバー（チャット・確率可視化・データ編集＆再学習）
+
+---
+
+## 🔗 リンク
+
+- 🎮 デモ Space: https://huggingface.co/spaces/koheip/mini-gpt-ja-demo
+- 💻 GitHub: https://github.com/koheip/mini-llm
+- 👤 作者: [koheip](https://huggingface.co/koheip) / [ポートフォリオ](https://huggingface.co/spaces/koheip/kohei-portfolio)
+
+> 約90万パラメータの学習・実験用モデルです。学習データにない話題には的外れな返答になります。
