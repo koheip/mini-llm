@@ -1,0 +1,265 @@
+{
+  "generations": [
+    {
+      "generation": 1,
+      "avg_best_score": 97.6,
+      "new_accepted": 7,
+      "total_synthetic": 7,
+      "final_loss": 0.0635,
+      "details": [
+        {
+          "prompt": "こんにちは！元気？",
+          "best_reply": "こんにちは！元気ですか？なんでも気軽に話しかけてくださいね。",
+          "best_score": 99.5,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:こんにちは,元気,話(+30) / 確信度(+19.5)",
+          "worst_reply": "こんばんは！今日もお疲れさまでした。ゆっくり休んでくださいね。",
+          "worst_score": 69.8,
+          "accepted": true
+        },
+        {
+          "prompt": "あなたの名前とできることを教えて",
+          "best_reply": "私の名前はミニGPTです。どうぞよろしくお願いします！",
+          "best_score": 85.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:ミニGPT(+15) / 確信度(+20.0)",
+          "worst_reply": "私自身もPythonとPyTorchで作られていますからね。",
+          "worst_score": 69.3,
+          "accepted": true
+        },
+        {
+          "prompt": "LLMとAttentionについて教えて",
+          "best_reply": "Attention（自己注意機構）は、文の中のどの言葉とどの言葉が深く関係しているかを計算する、LLMの心臓部です。",
+          "best_score": 99.7,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:関係,言葉(+30) / 確信度(+19.7)",
+          "worst_reply": "Attentionって何？\nAI: Attention（自己注意機構）は、文の中のどの言葉とどの言葉が深く関係しているかを計算する、LLMの心臓部です。",
+          "worst_score": 74.9,
+          "accepted": true
+        },
+        {
+          "prompt": "プログラミングで疲れたよ",
+          "best_reply": "毎日がんばっていてえらいです！少し休憩してリフレッシュしましょう。",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:休,休憩(+30) / 確信度(+20.0)",
+          "worst_reply": "毎日がんばっていてえらいです！少し休憩してリフレッシュしましょう。",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "お腹すいたし眠い",
+          "best_reply": "眠いときは無理をせず、早めに布団に入ってぐっすり寝るのが一番ですよ。おやすみなさい！",
+          "best_score": 99.9,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:寝,布団(+30) / 確信度(+19.9)",
+          "worst_reply": "眠いときは無理をせず、早めに布団に入ってぐっすり寝るのが一番ですよ。おやすみなさい！",
+          "worst_score": 99.9,
+          "accepted": true
+        },
+        {
+          "prompt": "Pythonで作られたAIなの？",
+          "best_reply": "私は、小さなローカルLLM（ミニGPT）です！",
+          "best_score": 99.2,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:ローカル,ミニGPT(+30) / 確信度(+19.2)",
+          "worst_reply": "私の名前はミニGPTです。どうぞよろしくお願いします！",
+          "worst_score": 83.7,
+          "accepted": true
+        },
+        {
+          "prompt": "今日も一日ありがとう！",
+          "best_reply": "どういたしまして！お役に立ててうれしいです。またいつでも話しかけてくださいね。",
+          "best_score": 99.6,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:どういたしまして,お役に,話しかけて(+30) / 確信度(+19.6)",
+          "worst_reply": "おはようございます！他にも気になりましたね！他になることがあれば聞いてくださいね。",
+          "worst_score": 67.8,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "generation": 2,
+      "avg_best_score": 97.8,
+      "new_accepted": 0,
+      "total_synthetic": 7,
+      "final_loss": 0.049,
+      "details": [
+        {
+          "prompt": "こんにちは！元気？",
+          "best_reply": "こんにちは！元気ですか？なんでも気軽に話しかけてくださいね。",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:こんにちは,元気,話(+30) / 確信度(+20.0)",
+          "worst_reply": "こんにちは！元気ですか？なんでも気軽に話しかけてくださいね。",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "あなたの名前とできることを教えて",
+          "best_reply": "私の名前はミニGPTです。どうぞよろしくお願いします！",
+          "best_score": 85.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:ミニGPT(+15) / 確信度(+20.0)",
+          "worst_reply": "私の名前はミニGPTです。どうぞよろしくお願いします！",
+          "worst_score": 85.0,
+          "accepted": true
+        },
+        {
+          "prompt": "LLMとAttentionについて教えて",
+          "best_reply": "Attention（自己注意機構）は、文の中のどの言葉とどの言葉が深く関係しているかを計算する、LLMの心臓部です。",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:関係,言葉(+30) / 確信度(+20.0)",
+          "worst_reply": "Attention（自己注意機構）は、文の中のどの言葉とどの言葉が深く関係しているかを計算する、LLMの心臓部です。",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "プログラミングで疲れたよ",
+          "best_reply": "毎日がんばっていてえらいです！少し休憩してリフレッシュしましょう。",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:休,休憩(+30) / 確信度(+20.0)",
+          "worst_reply": "毎日がんばっていてえらいです！少し休憩してリフレッシュしましょう。",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "お腹すいたし眠い",
+          "best_reply": "眠いときは無理をせず、早めに布団に入ってぐっすり寝るのが一番ですよ。おやすみなさい！",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:寝,布団(+30) / 確信度(+20.0)",
+          "worst_reply": "眠いときは無理をせず、早めに布団に入ってぐっすり寝るのが一番ですよ。おやすみなさい！",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "Pythonで作られたAIなの？",
+          "best_reply": "私は、小さなローカルLLM（ミニGPT）です！",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:ローカル,ミニGPT(+30) / 確信度(+20.0)",
+          "worst_reply": "私は、小さなローカルLLM（ミニGPT）です！",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "今日も一日ありがとう！",
+          "best_reply": "どういたしまして！お役に立ててうれしいです。またいつでも話しかけてくださいね。",
+          "best_score": 99.9,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:どういたしまして,お役に,話しかけて(+30) / 確信度(+19.9)",
+          "worst_reply": "どういたしまして！お役に立てててうれしいです。またいつでも話しかけてくださいね。",
+          "worst_score": 99.6,
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "generation": 3,
+      "avg_best_score": 97.8,
+      "new_accepted": 0,
+      "total_synthetic": 7,
+      "final_loss": 0.0639,
+      "details": [
+        {
+          "prompt": "こんにちは！元気？",
+          "best_reply": "こんにちは！元気ですか？なんでも気軽に話しかけてくださいね。",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:こんにちは,元気,話(+30) / 確信度(+20.0)",
+          "worst_reply": "こんにちは！元気ですか？なんでも気軽に話しかけてくださいね。",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "あなたの名前とできることを教えて",
+          "best_reply": "私の名前はミニGPTです。どうぞよろしくお願いします！",
+          "best_score": 85.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:ミニGPT(+15) / 確信度(+20.0)",
+          "worst_reply": "私の名前はミニGPTです。どうぞよろしくお願いします！",
+          "worst_score": 85.0,
+          "accepted": true
+        },
+        {
+          "prompt": "LLMとAttentionについて教えて",
+          "best_reply": "Attention（自己注意機構）は、文の中のどの言葉とどの言葉が深く関係しているかを計算する、LLMの心臓部です。",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:関係,言葉(+30) / 確信度(+20.0)",
+          "worst_reply": "Attention（自己注意機構）は、文の中のどの言葉とどの言葉が深く関係しているかを計算する、LLMの心臓部です。",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "プログラミングで疲れたよ",
+          "best_reply": "毎日がんばっていてえらいです！少し休憩してリフレッシュしましょう。",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:休,休憩(+30) / 確信度(+20.0)",
+          "worst_reply": "毎日がんばっていてえらいです！少し休憩してリフレッシュしましょう。",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "お腹すいたし眠い",
+          "best_reply": "眠いときは無理をせず、早めに布団に入ってぐっすり寝るのが一番ですよ。おやすみなさい！",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:寝,布団(+30) / 確信度(+20.0)",
+          "worst_reply": "眠いときは無理をせず、早めに布団に入ってぐっすり寝るのが一番ですよ。おやすみなさい！",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "Pythonで作られたAIなの？",
+          "best_reply": "私は、小さなローカルLLM（ミニGPT）です！",
+          "best_score": 100.0,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:ローカル,ミニGPT(+30) / 確信度(+20.0)",
+          "worst_reply": "私は、小さなローカルLLM（ミニGPT）です！",
+          "worst_score": 100.0,
+          "accepted": true
+        },
+        {
+          "prompt": "今日も一日ありがとう！",
+          "best_reply": "どういたしまして！お役に立てうれしいです。またいつでも話しかけてくださいね。",
+          "best_score": 99.9,
+          "best_critique": "完結性OK(+25) / 文法・形式OK(+25) / 文脈適合:どういたしまして,お役に,話しかけて(+30) / 確信度(+19.9)",
+          "worst_reply": "どういたしまして！お役に立ててうれしいです。またいつでも話しかけてくださいね。",
+          "worst_score": 99.6,
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "synthetic_data_count": 7,
+  "synthetic_pairs": [
+    {
+      "prompt": "こんにちは！元気？",
+      "reply": "こんにちは！元気ですか？なんでも気軽に話しかけてくださいね。",
+      "score": 100.0,
+      "entry": "ユーザー: こんにちは！元気？\nAI: こんにちは！元気ですか？なんでも気軽に話しかけてくださいね。◁"
+    },
+    {
+      "prompt": "あなたの名前とできることを教えて",
+      "reply": "私の名前はミニGPTです。どうぞよろしくお願いします！",
+      "score": 85.0,
+      "entry": "ユーザー: あなたの名前とできることを教えて\nAI: 私の名前はミニGPTです。どうぞよろしくお願いします！◁"
+    },
+    {
+      "prompt": "LLMとAttentionについて教えて",
+      "reply": "Attention（自己注意機構）は、文の中のどの言葉とどの言葉が深く関係しているかを計算する、LLMの心臓部です。",
+      "score": 100.0,
+      "entry": "ユーザー: LLMとAttentionについて教えて\nAI: Attention（自己注意機構）は、文の中のどの言葉とどの言葉が深く関係しているかを計算する、LLMの心臓部です。◁"
+    },
+    {
+      "prompt": "プログラミングで疲れたよ",
+      "reply": "毎日がんばっていてえらいです！少し休憩してリフレッシュしましょう。",
+      "score": 100.0,
+      "entry": "ユーザー: プログラミングで疲れたよ\nAI: 毎日がんばっていてえらいです！少し休憩してリフレッシュしましょう。◁"
+    },
+    {
+      "prompt": "お腹すいたし眠い",
+      "reply": "眠いときは無理をせず、早めに布団に入ってぐっすり寝るのが一番ですよ。おやすみなさい！",
+      "score": 100.0,
+      "entry": "ユーザー: お腹すいたし眠い\nAI: 眠いときは無理をせず、早めに布団に入ってぐっすり寝るのが一番ですよ。おやすみなさい！◁"
+    },
+    {
+      "prompt": "Pythonで作られたAIなの？",
+      "reply": "私は、小さなローカルLLM（ミニGPT）です！",
+      "score": 100.0,
+      "entry": "ユーザー: Pythonで作られたAIなの？\nAI: 私は、小さなローカルLLM（ミニGPT）です！◁"
+    },
+    {
+      "prompt": "今日も一日ありがとう！",
+      "reply": "どういたしまして！お役に立てうれしいです。またいつでも話しかけてくださいね。",
+      "score": 99.9,
+      "entry": "ユーザー: 今日も一日ありがとう！\nAI: どういたしまして！お役に立てうれしいです。またいつでも話しかけてくださいね。◁"
+    }
+  ]
+}

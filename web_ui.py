@@ -432,6 +432,13 @@ HTML_PAGE = """<!DOCTYPE html>
       <p>低いほど学習データに忠実に答え、高いほど色んな文字をランダムに組み合わせます。</p>
     </div>
 
+    <div class="card">
+      <h2>🧬 RSI（再帰的自己改善）ループ</h2>
+      <p>AI自身が応用質問に対する返答を複数生成・100点満点で自己採点（流暢さ・完結性・文脈適合・確信度）し、高得点の回答だけを学習データに追加して自己進化します。</p>
+      <button id="rsiBtn" onclick="runRSI()">🧬 RSI自己改善を実行（2世代・約12秒）</button>
+      <div class="status-box" id="rsiStatus"></div>
+    </div>
+
     <div class="card" style="flex:1;">
       <h2>📚 学習データ編集 & その場で再学習</h2>
       <p>下の会話データ（<code>chat_data.txt</code>）に新しい会話や好きなキャラ口調を書き足して「保存して再学習」を押すと、約10秒で新しい会話を覚えます！（AIの返答の最後には必ず <code>◁</code> を付けてください）</p>
@@ -537,6 +544,33 @@ async function retrainModel() {
     trainBtn.disabled = false;
   }
 }
+
+async function runRSI() {
+  const rsiBtn = document.getElementById('rsiBtn');
+  const rsiStatus = document.getElementById('rsiStatus');
+  rsiBtn.disabled = true;
+  rsiStatus.style.color = '#38bdf8';
+  rsiStatus.textContent = '🧬 自己生成 → 自己採点 → 厳選データの再帰学習を実行中（約12秒）...';
+  try {
+    const res = await fetch('/api/rsi', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({generations: 2})
+    });
+    const data = await res.json();
+    await loadData();
+    const lines = data.generations.map(
+      g => `第${g.generation}世代: 平均自己評価 ${g.avg_best_score}点 / Loss ${g.final_loss}`
+    ).join('\n');
+    rsiStatus.style.color = '#4ade80';
+    rsiStatus.textContent = `✅ RSI自己改善完了！（合成データ採用: ${data.synthetic_data_count}件）\n${lines}`;
+  } catch (err) {
+    rsiStatus.style.color = '#f87171';
+    rsiStatus.textContent = 'エラー: ' + err;
+  } finally {
+    rsiBtn.disabled = false;
+  }
+}
 </script>
 </body>
 </html>
@@ -586,6 +620,12 @@ class WebUIHandler(BaseHTTPRequestHandler):
                 data_path.write_text(new_text + "\n", encoding="utf-8")
             info = engine.train_model(steps=steps)
             self._send_json(info)
+        elif self.path == "/api/rsi":
+            from rsi_gpt import RSISelfImprover
+            gens = int(req.get("generations", 2))
+            improver = RSISelfImprover(engine)
+            res = improver.run_rsi_cycle(generations=gens, candidates_per_prompt=5, score_threshold=75.0, steps_per_gen=300)
+            self._send_json(res)
         else:
             self.send_error(404)
 
